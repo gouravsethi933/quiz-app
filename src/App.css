@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.input-email {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1.7rem;
+  outline: none;
+  border: none;
+  padding: 0.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-email:focus {
+  outline-style: dashed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submit-btn {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #F36523;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.details {
+  margin-top: 5rem;
+  width: 60%;
+  height: 15rem;
   align-items: center;
+}
+
+.questnNo {
+  background-color: #D8FFF3;
+  border: none;
+
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+
+
+}
+
+section {
+  padding: 1rem;
+}
+
+.questnNo {
+  width: 5rem;
+  height: 3rem;
+}
+
+.questnNo:hover {
+  background-color: orange;
+}
+
+.questnNo:focus {
+  background-color:#F36523;
+}
+
+.optns {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-opt {
+  width: 50%;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-opt:hover {
+  background-color: #F36523;
+}
+
+@media screen and (max-width:450px) {
+  .btns {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .details {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-email {
+    width: 100%;
   }
 }
